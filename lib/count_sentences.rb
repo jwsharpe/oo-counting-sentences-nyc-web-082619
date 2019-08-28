@@ -16,5 +16,6 @@ class String
 
   def count_sentences
     self.split.count{|msg| (msg.exclamation? || msg.question? || msg.sentence?)}
+    new_array = 
   end
 end
