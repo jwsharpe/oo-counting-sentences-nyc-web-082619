@@ -15,6 +15,6 @@ class String
   end
 
   def count_sentences
-    self.split.reject{|msg| !(msg.exclamation? || msg.question? || msg.sentence?)}.length
+    self.split.count{|msg| (msg.exclamation? || msg.question? || msg.sentence?)}
   end
 end
